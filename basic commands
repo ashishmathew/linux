@@ -1,0 +1,5 @@
+mkdir -p India/Delhi - creates parent as well as child
+pushd and popd - works like a stack
+cp -r source destination - copies all contents recursively
+whatis echo - gives single line information about a command
+apropos modpr - parses through the man pages (works like grep through the manual pages)
