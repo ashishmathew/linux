@@ -3,3 +3,13 @@ pushd and popd - works like a stack
 cp -r source destination - copies all contents recursively
 whatis echo - gives single line information about a command
 apropos modpr - parses through the man pages (works like grep through the manual pages)
+chsh - to change shell
+alias dt = date  (alias , use dt from here onwards)
+history
+env - to view all environment variables
+export office=caleston - to assign the path to an env variable
+~/.bash_profile  - to persist the environment variables
+which grep - this gives the path of the command
+export PATH=$PATH:/opt/obs/bin - appends to the path
+echo $PS1 = check the bash prompt
+how to customize the bash prompt - check online
