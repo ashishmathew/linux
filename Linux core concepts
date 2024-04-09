@@ -1,0 +1,31 @@
+What is a kernel  (use uname and uname -r )
+ - nucleus of the OS
+ - intermediate between Application users/processes and the underlying hardware
+
+Kernel functions : 
+    - Memory Management
+    - divided into below
+        - Kernel space (Kernel, Device Drivers)
+        - user space (Applications/Programs)
+        - For e.g cat /etc/dummy.txt(user space) - > calls the kernel (kernel space) : System calls : Device drivers (kernel space) - > Hardware (block device) 
+
+Working with hardware (This is very specific to the Linux kernel)
+    - dmesg - shows all the boot logs. 
+    - udevadm info  --query=path --name=/dev/sda5 (to get info about the hardware)
+    - udevadm monitor (listen to kernel uvents[this can attaching a usb, removing a usb mouse etc. ] . Determines details of newly attached device)
+
+lspci(peripheral components interconnect)
+ - e.g. graphic card, ethernet cable etc.  
+
+lsblk 
+ - list all the block devices and their partition
+
+lscpu 
+ - information of the cpu
+
+To check memory 
+ - lsmem -- summary
+ - free -m 
+
+ lshw
+  - tool to extract entire hardware information on the machine
