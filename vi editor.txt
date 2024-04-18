@@ -1,0 +1,5 @@
+Three modes 
+    - Command (yy, p , dd, d3d,hjkl,u, ctrl + r, find mode - / ? n, N)
+    - insert (i,o)
+    - last line (:w)
+

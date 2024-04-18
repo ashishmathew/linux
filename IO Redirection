@@ -1,0 +1,7 @@
+echo "something" > shell.txt
+echo "something" >> shell.txt
+
+Redirect standard error
+ - echo omg 2> error.txt
+ - echo omg 2>> error.txt
+ - echo omg 2> /dev/null

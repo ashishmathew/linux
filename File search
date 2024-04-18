@@ -1,0 +1,14 @@
+Search files
+    locate
+    updatedb - this updates the db
+    find / -name test.txt
+
+Search in files
+    grep
+    grep -i 
+    grep -r text <directory>
+    grep -v
+    grep -w exam  exmaples.txt (match the whole word)
+    grep -vw
+    grep -A1 text <file> - one line next matching the pattern
+      
