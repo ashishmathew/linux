@@ -1,0 +1,29 @@
+consists of : 
+    - BIOS POST (Check if everything is connected)
+    - Boot loader(GRUB2)(Grand unified boot loader) (loads the bootscreen) - loads kernel into memory 
+    - kernel initilization (initializes h/w)
+    - init process (set up user env) - systemd(mount file systems)
+
+runlevel 
+ - 3  (terminal mode)
+ - 5 (GUI mode)
+
+ systemctl get-default - check the current run level (graphical or terminal)
+ systemct set-default multi-user.target  - to change the current run level
+
+ The complete list of runlevels and the corresponding systemd targets can be seen below:
+
+runlevel 0 -> poweroff.target
+
+runlevel 1 -> rescue.target
+
+runlevel 2 -> multi-user.target
+
+runlevel 3 -> multi-user.target
+
+runlevel 4 -> multi-user.target
+
+runlevel 5 -> graphical.target
+
+runlevel 6 -> reboot.target
+

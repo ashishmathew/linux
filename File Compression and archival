@@ -1,0 +1,12 @@
+File size
+    - du -sk <file>
+    - du -sh <file>
+    - ls -lh <file>
+
+Archiving files
+    - tar -cf  - archive and name the file
+    - tar -tf - show all the files in the tar 
+    - tar -xf - extract the files
+    - tar -zcf - compress it further
+
+    Compressing and Uncompressing

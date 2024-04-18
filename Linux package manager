@@ -1,0 +1,28 @@
+types of package managers
+    - .rpm (rhel, centos, fedora)
+    - .deb (ubuntu, debian, linux mint)
+
+ - dpkg
+ - apt
+ -apt-get
+ - rpm
+ - yum
+ - dnf
+-------check out the labs on this in KodeKloud
+ Working with rpm 
+
+    - does not resolve dependencies
+
+working with Yum 
+    - resolves dependencies
+
+working with dpkg (does not resolve dependencies)
+working with apt-get
+
+
+apt update
+apt upgrade
+apt edit-sources
+
+apt vs apt-get
+- user friendly vs non user friendly

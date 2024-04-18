@@ -1,0 +1,15 @@
+Types of files
+    - Regular file (script,text etc. )
+    - Directory
+    - Special Files 
+        - Character files
+        - Block files
+        - Links
+            - Hard links
+            - Soft links
+        - Socket files
+        - Named pipes 
+file <filename>
+file types and identifiers
+df -hP - shows all the mount files
+File system hierarchy - check online
