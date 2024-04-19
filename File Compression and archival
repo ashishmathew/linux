@@ -10,3 +10,17 @@ Archiving files
     - tar -zcf - compress it further
 
     Compressing and Uncompressing
+    
+    Compress 
+        -bzip2
+        -gzip
+        -xz
+    Uncompress
+        -bunzip2
+        -gunzip
+        -unxz
+
+    To view compressed files
+        -zcat 
+        -bzcat
+        -xzcat

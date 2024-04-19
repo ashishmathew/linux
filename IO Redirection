@@ -5,3 +5,8 @@ Redirect standard error
  - echo omg 2> error.txt
  - echo omg 2>> error.txt
  - echo omg 2> /dev/null
+
+ tee command
+  - same as > or >> 
+  - echo $SHELL | tee shell.txt
+  - echo $SHELL | tee -a shell.txt

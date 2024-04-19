@@ -11,4 +11,6 @@ Search in files
     grep -w exam  exmaples.txt (match the whole word)
     grep -vw
     grep -A1 text <file> - one line next matching the pattern
+    grep -B1 text <file> - one line before matching the pattern
+    grep -A1 -B1 text <file> - one line before and after
       

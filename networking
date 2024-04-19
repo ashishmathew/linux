@@ -1,0 +1,30 @@
+DNS
+/etc/host  -- add entry for any server
+/etc/resolv.conf -- this will be the list of dns server
+/etc/nsswitch.conf - order of the hosts (between local /etc/hosts vs remote DNS)
+
+- domain and subdomain
+        - www.google.com    
+        - www.abc.org
+        - www.standford.edu
+
+- Record types
+    - A  (IPV4)
+    - AAAA (IPV6)
+    - CNAME (map one name with the other)
+
+ - nslookup www.google.com
+ - dig www.google.com
+
+SWITCHING & ROUTING
+ -  switch
+        - ip link (to see the interfaces on the host)
+        - ip addr add  ip/24 dev etho (to add itself to the switch)
+ -  router
+        - ip route add <destination ip> via router ip (to configure a gateway to reach a system in 
+        another network)
+ -  gateway(route)
+     - to connect to the internet
+
+********* Do the lab session again
+
