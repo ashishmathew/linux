@@ -1,0 +1,47 @@
+linux accounts and security 
+
+Linux account
+    - userid /etc/passwd
+    - group id /etc/group
+    - id username
+Account Types
+    - User account
+    - superuser account
+    - system accounts
+    - Service accounts (nginx, mercury)
+
+Commands
+    - whoami
+    - last
+    - su - 
+    - su -c "whoami"
+    - sudo  
+    - use nologin for root so that root cannot login
+    -sudoers file - /etc/sudoers
+
+Access Control files : 
+    - /etc/passwd
+    - /etc/shadow - passwords stored here
+    - /etc/group
+
+Managing Users: 
+    - useradd bob - add a user
+    - passwd bob - add password
+    - userdel bob- delete a user
+    - group -g 1011 developer - create a group
+    - groupdel developer  - delete a group
+
+File permissions: 
+    - owner permissions
+    -group permission
+    - permission for others
+
+    Modify file permissions: 
+        chmod <permissions> file
+        chmod ugo+rwx 
+            + - to add access
+            - to remove access
+        chmod 777 <file name>
+    change ownership: 
+        - chown bob:dev <file> - bob is the owner and dev is the group
+        - chgrp dev <file> - modifies only the group
