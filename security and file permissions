@@ -45,3 +45,15 @@ File permissions:
     change ownership: 
         - chown bob:dev <file> - bob is the owner and dev is the group
         - chgrp dev <file> - modifies only the group
+ssh: 
+    ssh username@host
+password-less ssh: 
+    - ssh-keygen -t rsa (on client)
+        - creates public key ------------------copy to -----> remote server (ssh copy-id user@host) --> stored in
+            /home/<user>/.ssh/authorized_keys
+        - create private key
+
+scp : 
+    copy data over ssh
+    - scp <source file> remoteserver:<filepath>
+    - scp -pr <source directory>   remoteserver:<filepath> - use -r for directory, -p to preserve ownership
