@@ -1,0 +1,22 @@
+Network security
+
+IP tables: 
+  - sudo apt install  iptables
+  - sudo iptables -L 
+  - allow or deny packets
+  - rules are based on the order -> top to bottom
+   =================================================
+   Chain input
+    - > Accept
+    - > Drop 
+    - > Accept
+   Chain forward
+    Target 
+   Chain output
+   - > Accept
+   - > Accept
+   - > Drop
+
+   iptables -A 
+   iptables -I
+   iptables -D

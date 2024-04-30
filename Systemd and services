@@ -1,0 +1,28 @@
+To run command in background - you have to run this as a service
+
+go to /etc/systemd/system/project-mercury.service: 
+    [Service]
+    ExecStart = <include the script here>
+then 
+    systemctl start project-mercury.service
+
+    systemctl status project-mercury.service
+
+    systemctl stop project-mercury.service
+
+in the project-mercury.service file 
+[Install]
+WantedBy - > add it here as graphical target or command line
+
+To have the service account start the service instead of the root 
+User = project_mercury(service account)
+
+To restart the service on failure
+Restart = on-failure
+restartSec=10 (wait before 10 seconds to restart it)
+
+logging - taken care by the system
+
+systemctl daemon-reload - system to detect the changes made in above service file
+
+systemctl start project-mercury.service

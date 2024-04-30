@@ -1,0 +1,25 @@
+systemctl: stop/start/restart/reload
+
+journalctl : troubleshooting tool
+
+Service Managment systemd tool
+
+Commands : 
+    systemctl start docker : 
+    systemctl stop docker :
+    systemctl restart docker :
+    systemctl reload docker : reload without interrupting service
+    systemctl enable docker : enable the service across boot
+    systemctl disable docker : disable the service
+    systemctl status docker : (Active, Inactive , Failed)
+    systemctl daemon-reload : makes the system aware of the changes
+    systemctl edit project-mercury.service --full : to edit the unit file , if edited this way daemon-reload is not needed
+    systemctl get-default : to get the run level
+    systemctl set-default multi-user.target : 
+    systemctl list-units --all: displays all active and inactive units, do not use -all if inactive units are not needed
+    
+    journalctl  : shows the bootlogs from the time when the server was up
+    journalctl -b  : show the bootlogs from the last timw when the server was up
+    journalctl -u docker.service : - shows the bootlogs for the specific service
+
+        
